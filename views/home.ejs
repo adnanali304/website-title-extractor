@@ -1,0 +1,11 @@
+<html>
+<head></head>
+<body>
+    <h1> Following are the titles of given websites: </h1>
+    <ul>
+        <% for(let i = 0; i < result.length; i++ ){ %>
+            <li><a href="<%= result[i].address %>"><%= result[i].address %><a> - <%= result[i].title %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
